@@ -33,4 +33,15 @@ public class GarageTest {
         assertEquals("Motor", soort);
 
     }
+
+    // Added a test for adapter pattern
+
+    @Test
+    public void testOudeFiets(){
+        voertuig = getVoertuig (new OudeFietsFactory());
+        soort = voertuig.getLabel();
+
+        assertEquals("Oude Fiets", soort);
+
+    }
 }
