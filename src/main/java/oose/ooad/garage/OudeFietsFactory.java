@@ -8,6 +8,7 @@ public class OudeFietsFactory extends VoertuigFactory {
     public Voertuig create() {
         // OudeFiets does not match our Voertuig specs
         // So we need an adapter
-        return new OudeFietsAdapter(new OudeFiets());
+        return new OudeFietsAdapter(
+                new OudeFiets());
     }
 }

@@ -19,7 +19,7 @@ public class GarageTest {
 
     @Test
     public void testAuto(){
-        voertuig = getVoertuig (new AutoFactory());
+        voertuig = getVoertuig (AutoFactory.getInstance());
         soort = voertuig.getLabel();
 
         assertEquals("Auto", soort);
