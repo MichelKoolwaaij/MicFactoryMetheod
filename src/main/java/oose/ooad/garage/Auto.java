@@ -11,6 +11,6 @@ public class Auto extends Voertuig {
 
     @Override
     public void drive() {
-        // drive
+        // drive a car
     }
 }
